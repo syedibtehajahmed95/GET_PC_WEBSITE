@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get PC</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        min-width: 300px;
+        /* max-height: 7px; */
+    }
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  }
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 100%) {
+  .prev, .next,.text {font-size: 11px}
+}
+.main{
+  display: flex;
+  margin: 0px;
+    top: 0%;
+    left: 0px;
+    bottom: 0%;
+    right: 0%;
+    width: 100%;
+    min-width: 50%;
+    flex: 1;
+  
+}
+.sec1{
+    margin: 0px;
+    padding-bottom: 5px ;
+    top: 0%;
+    left: 0px;
+    bottom: 0%;
+    right: 0%;
+    width: 100%;
+    background-image: url(./images/jack-b-YHFaMjk4uVo-unsplash.jpg);
+    background-size:contain;
+    background-color: #211919;
+}
+.sech1{
+  margin: 0px;
+    padding: 0px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4vh;
+    text-align: left;
+    border-top: 1px solid #ffffff ;
+    border-bottom:1PX solid white ;
+    color: #ffffff;
+    -webkit-text-stroke: 1px black;
+}
+.sech2{
+  margin: 0px;
+    padding: 0%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3.5vh;
+    text-align: left;
+    border-top: 1px solid #ffffff ;
+    border-bottom:1PX solid white ;
+    color: #ffffff;
+    -webkit-text-stroke: 1px black;
+}
+.d1{
+  margin: 2px;
+
+    padding: 0%;
+    max-width: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+    text-align: center;
+    color: #f2f2f2;
+}
+.sec2{
+    margin: 0px;
+    padding-bottom: 5px ;
+    border: 1px solid white;
+    top: 0%;
+    left: 0px;
+    bottom: 0%;
+    right: 0%;
+    width: 50%;
+    background-image: url(./images/asus.jpg);
+    background-size:cover;
+    background-position: center;
+    background-color: #211919;
+}
+.d2{
+  margin: 1vw;
+
+    padding: 0%;
+    max-width: 70%;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+    /* text-align: center; */
+    color: #f6ff00;
+}
+.sec3{
+    margin: 0px;
+    padding-bottom: 5px ;
+    border: 1px solid white;
+    top: 0%;
+    left: 0px;
+    bottom: 0%;
+    right: 0%;
+    width: 50%;
+    background-image: url(./images/gaming.webp);
+    background-size:cover;
+    background-position: center;
+    background-color: #211919;
+}
+.d3{
+  margin: 1vw;
+
+    padding: 0%;
+    max-width: 70%;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+    text-align: left; 
+    color: rgb(255, 255, 255);
+    stroke: 4px #211919;
+}
+</style>
+<body>
+    <header>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="./images/logo.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 2</div>
+              <img src="./images/image1.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="./images/image2.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 4</div>
+              <img src="./images/image3.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">5 / 5</div>
+              <img src="./images/new offers.png" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span> 
+            </div>
+            
+            <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+            
+  </header>
+    <nav class="nav1">
+            <ul class="ul1">
+                <li class="l1"><a class="a1" href="index.html"><i class="fa-solid fa-house">Home</i></a></li>
+                <li class="l1"><a class="a1" href="shop.html"><i class="fa-brands fa-product-hunt">Products</i></a></li>
+                <li  class="l1"><a class="a1" href="Specialoffer.html"><i class="fa-brands fa-ideal">Deals</i></a></li>
+                <li  class="l1"><a class="a1" href="log_in.html"><i class="fa-solid fa-arrow-right-to-bracket">Login</i></a></li>
+                <li  class="l1"><a class="a1" href="Specialoffer.html"><i class="fa-solid fa-cart-shopping">Buy</i></a></li>
+            </ul>
+    </nav>   
+    <section class="sec1">
+      <h1 class="sech1">Welcome</h1>
+      <div class="d1">Welcome to Get PC, your ultimate destination for all things PC-related! Whether you're a gaming enthusiast, a professional seeking high-performance computing solutions, or someone looking to enhance your computer setup, we've got you covered. At Get PC, we pride ourselves on offering a wide range of top-quality PC accessories to meet every need. From cutting-edge graphics cards and powerful processors to sleek peripherals and efficient cooling solutions, we have it all. What sets us apart is our dedication to providing personalized experiences – our expert team is ready to assist you in building the customized PC of your dreams. Explore our extensive selection, and let Get PC be your trusted partner in achieving the ultimate computing experience. Welcome to a world where innovation meets customization!</div>
+    </section>
+ <section class="main"> 
+         <section class="sec2">
+              <h1 class="sech1">ABOUT US</h1>
+              <div class="d2">Get PC, Pakistan's pioneering online custom PC building company! At Get PC, our journey began with a simple yet powerful motivation – to revolutionize the way customers experience purchasing and building their dream PCs. We recognized a common challenge faced by enthusiasts and professionals alike – the struggle to find a reliable source that not only provides quality PC accessories but also understands the unique needs of individual users.</div>
+          </section>
+          <section class="sec3">
+              <div class="d3">
+              <h1 class="sech2">OUR GOALS</h1>
+               </h1>
+        At the core of our motivation lies the commitment to address the frustration customers often encounter when trying to buy a PC that perfectly aligns with their requirements. We understand the diverse needs of our customers, ranging from gamers seeking high-performance rigs to professionals demanding powerful workstations. The challenge of finding a one-stop solution for customization and quality components led us to establish Get PC
+              </div>
+              </section>
+  </section>
+ <footer class="footer">
+          <h1 class="fh1">GET PC</h1>
+          <div class="fh2">CONTACT US</div>
+          <div id="f">© 2024 Get PC. All rights reserved</div>
+          <div id="f"><address>SADDAR COMPUTER MARKET, SHOP NO # 44</address></div>
+          <div id="f">For any inquiries, please contact us at getpcon@gmail.com or +92-xxx-xxxxxxx</div>
+          <div id="f">Privacy Policy | Terms of Service | Return Policy</div>
+          <div id="f">Designed and built by Get PC</div>
+          <div id="f">Your Privacy Matters - Read Our Privacy Policy for more information. <br> <a href="privatpolicy.html" style="color: #f2f2f2;">private policy</a></div>
+      </footer>
+</body>
+</html>
